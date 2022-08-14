@@ -6,6 +6,7 @@
 
 Console.WriteLine("Введите трехзначное число");
 int a = Convert.ToInt32(Console.ReadLine());
+a = Math.Abs(a);
 if (a / 1000 == 0 && a /100 != 0)
 {
     int b = (a / 10) % 10;
