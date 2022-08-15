@@ -10,6 +10,6 @@ int i = 1;
 
 while (i <= number1)
 {
-    Console.WriteLine(i*i*i);
+    Console.WriteLine(Math.Pow(i, 3));
 i++;
 }
