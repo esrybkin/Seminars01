@@ -6,7 +6,7 @@
 int Cycle(int a)
 {
     int sum = 0;
-    for (int i=1; i<=a; i++);
+    for (int i=1; i<=a; i++)
     {
         sum = sum + i;
     }
@@ -15,4 +15,4 @@ int Cycle(int a)
 
 Console.Write("Введите число А: ");
 int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(Cycle(sum));
+Console.WriteLine(Cycle(a));
