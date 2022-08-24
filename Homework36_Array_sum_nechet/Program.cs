@@ -17,12 +17,9 @@ int[] FillArray(int size, int min, int max)
 
 int sum = 0;
 int[] array = FillArray(10, -30, 30);
-for (int j = 0; j < array.Length; j++)
+for (int j = 1; j < array.Length; j+=2)
 {
-    if (j % 2 != 0)
-    {
-        sum = sum + array[j];
-    }
+    sum = sum + array[j];
 }
 
 Console.WriteLine('[' + string.Join(',', array)+']');
