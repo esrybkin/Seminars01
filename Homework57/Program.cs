@@ -46,11 +46,42 @@ int[,] arr = new int[ROWS, COLUMNS];
 arr = FillArray(ROWS, COLUMNS, MIN, MAX);
 PrintArray(arr);
 
-int[] vocab = new int[MAX];
-for (int i=0; i<rows; i++)
+int vocab1 = 0;
+int vocab2 = 0;
+int vocab3 = 0;
+int vocab4 = 0;
+int vocab5 = 0;
+int vocab6 = 0;
+int vocab7 = 0;
+int vocab8 = 0;
+int vocab9 = 0;
+int vocab0 = 0;
+
+for (int i=0; i<ROWS; i++)
         {
-            for (int j=0; j< columns; j++)
+            for (int j=0; j< COLUMNS; j++)
             {
-                if (array[i,j] == 1) vocab[i];
+                if (arr[i,j] == 1) vocab1 += 1;
+                if (arr[i,j] == 2) vocab2 += 1;
+                if (arr[i,j] == 3) vocab3 += 1;
+                if (arr[i,j] == 4) vocab4 += 1;
+                if (arr[i,j] == 5) vocab5 += 1;
+                if (arr[i,j] == 6) vocab6 += 1;
+                if (arr[i,j] == 7) vocab7 += 1;
+                if (arr[i,j] == 8) vocab8 += 1;
+                if (arr[i,j] == 9) vocab9 += 1;
+                if (arr[i,j] == 0) vocab0 += 1;
             }
         }
+
+
+Console.WriteLine($"1 встречается {vocab1} раза");
+Console.WriteLine($"2 встречается {vocab2} раза");
+Console.WriteLine($"3 встречается {vocab3} раза");
+Console.WriteLine($"4 встречается {vocab4} раза");
+Console.WriteLine($"5 встречается {vocab5} раза");
+Console.WriteLine($"6 встречается {vocab6} раза");
+Console.WriteLine($"7 встречается {vocab7} раза");
+Console.WriteLine($"8 встречается {vocab8} раза");
+Console.WriteLine($"9 встречается {vocab9} раза");
+Console.WriteLine($"0 встречается {vocab0} раза");
