@@ -5,7 +5,7 @@
 // 23432 -> да
 
 Console.WriteLine("Введите число: ");
-string? number1 = Console.ReadLine();
+string? number1 = Console.ReadLine()!;
 string number2 = string.Empty;
 
 for (int i = 0; i < number1.Length; i++)
